@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Forgot Username</title>
 
   <style>
     body {
@@ -15,45 +15,52 @@
       height: 100vh;
     }
 
-    .login-container {
-      background: rgb(238, 84, 84);
+    .container {
+      background: white;
       padding: 30px;
       border-radius: 10px;
-      width: 300px;
+      width: 320px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .login-container h2 {
+    h2 {
       text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
       margin-bottom: 20px;
     }
 
-    .login-container input {
+    input {
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
+      margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
 
-    .login-container button {
+    button {
       width: 100%;
       padding: 10px;
-      background-color: #4CAF50;
-      color: rgb(128, 228, 82);
+      background-color: #28a745;
+      color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
 
-    .login-container button:hover {
-      background-color: #45a049;
+    button:hover {
+      background-color: #218838;
     }
 
-    .login-container a {
+    .back-link {
       display: block;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
       font-size: 14px;
     }
   </style>
@@ -61,16 +68,18 @@
 
 <body>
 
-  <div class="login-container">
-    <h2>Login</h2>
+  <div class="container">
+    <h2>Forgot Username</h2>
+
+    <p>Enter your registered email address to recover your username.</p>
 
     <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+      <input type="email" placeholder="Enter your email" required>
+
+      <button type="submit">Recover Username</button>
     </form>
 
-    <a href="#">Forgot Password?</a>
+    <a class="back-link" href="#">Back to Login</a>
   </div>
 
 </body>
