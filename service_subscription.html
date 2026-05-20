@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .subscription-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #e65c00;
+    }
+
+    .plans {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .plans label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="subscription-box">
+    <h2>Subscribe Now</h2>
+    <p>Choose your subscription plan</p>
+
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+
+      <div class="plans">
+        <label>
+          <input type="radio" name="plan" required>
+          Basic Plan - $5/month
+        </label>
+
+        <label>
+          <input type="radio" name="plan">
+          Premium Plan - $10/month
+        </label>
+
+        <label>
+          <input type="radio" name="plan">
+          Pro Plan - $22/month
+        </label>
+      </div>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+</body>
+</html>
